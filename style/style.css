@@ -67,3 +67,81 @@
     font-weight: 900; 
     font-style: normal;
 }
+
+body {
+ margin: 0;
+}
+
+.nav-section {
+    background-image: url('/assets/images/Vector.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F5F5F5;
+}
+.nav{
+    display: flex ;
+    color: #7F7F7F;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.nav img{
+    width: 121px;
+    height: 28px;
+}
+
+.nav ul{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    gap: 20px;
+    list-style: none;
+    border-radius: 80px;
+    
+}
+
+.nav button{
+    background-color: #193D42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 60px;
+    width: 148px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.title-section{
+    font-family: 'CustomFont', sans-serif;
+    font-weight: 600; 
+    font-size: 120px;
+    text-align: center;
+    color: #022D33;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.title-section div div{
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.title-section h1 {
+    margin: 0;
+}
+
+.hero-image{
+    margin-top: 100px;
+}
