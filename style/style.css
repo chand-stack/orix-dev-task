@@ -70,6 +70,7 @@
 
 body {
  margin: 0;
+ background-color: #F5F5F5;
 }
 
 .nav-section {
@@ -83,7 +84,7 @@ body {
     color: #7F7F7F;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;;
     background: none;
     font-weight: 600;
     font-size: 16px;
@@ -116,7 +117,7 @@ body {
     cursor: pointer;
     height: 60px;
     width: 148px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;;
     font-weight: 600;
     font-size: 16px;
 }
@@ -145,3 +146,103 @@ body {
 .hero-image{
     margin-top: 100px;
 }
+
+.contact-section{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-box{
+    width: 448px;
+    height: 295px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.contact-title{
+    font-family: 'Inter', sans-serif;;
+    font-weight: 600; 
+    font-size: 20px;
+    color: #022D33;
+    line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn a {
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 20px;
+line-height: 24.2px;
+color: #FE5000;
+text-decoration: none;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-box{
+    width: 944px;
+    height: 295px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: flex-start; /* Keeps buttons at the top */ 
+    gap: 40px; 
+}
+.service-box button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; 
+    font-size: 16px;
+    background-color: transparent;
+    color: #022D33;
+    border: #DCDCDC 1px solid;
+    border-radius: 50px;
+    padding: 8px 16px; 
+    min-height: 44px; 
+    line-height: normal;
+    white-space: nowrap; 
+}
+.service-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.service-img{
+    width: 205px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+}
+
+.service-img h1{
+    font-family: 'CustomFont', sans-serif;
+    font-weight: 500; 
+    font-size: 36px;
+    line-height: 41.76px;
+    color: #022D33;
+}
+.service-img h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; 
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #022D33;
+}
+
+/* .service-img img{
+    grid-row: span 3;
+    object-fit: cover;} */
