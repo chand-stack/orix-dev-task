@@ -1,4 +1,4 @@
-<h1>Carousel Slider Project</h1>
+<h1>Qanci Development Agency Project</h1>
 
 <h2>Overview</h2>
 <p>
