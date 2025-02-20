@@ -5,63 +5,63 @@ document.addEventListener("DOMContentLoaded", function () {
     logoSlider.innerHTML += logos; 
 });
 
-// carousel button script for large screens
+// Carousel button script for large screens
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".carousel-items");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-
     let scrollAmount = 0;
     const itemWidth = 320;
 
-    nextBtn.addEventListener("click", () => {
+  
+    const prevBtns = document.querySelectorAll(".prev, .prevSm");
+    const nextBtns = document.querySelectorAll(".next, .nextSm");
+
+    function moveNext() {
         scrollAmount += itemWidth;
-        if (scrollAmount >= carousel.scrollWidth - itemWidth) {
-            scrollAmount = 0; 
+        if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+            scrollAmount = 0;
         }
         carousel.style.transform = `translateX(-${scrollAmount}px)`;
-    });
+    }
 
-    prevBtn.addEventListener("click", () => {
+ 
+    function movePrev() {
         scrollAmount -= itemWidth;
         if (scrollAmount < 0) {
-            scrollAmount = carousel.scrollWidth - itemWidth; 
+            scrollAmount = carousel.scrollWidth - carousel.clientWidth;
         }
         carousel.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+  
+    nextBtns.forEach(btn => btn.addEventListener("click", moveNext));
+    prevBtns.forEach(btn => btn.addEventListener("click", movePrev));
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const swipeThreshold = 50; 
+
+    carousel.addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
     });
-    setInterval(() => {
-        nextBtn.click();
-    }, 4000);
+
+    carousel.addEventListener("touchmove", (e) => {
+        touchEndX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener("touchend", () => {
+        const swipeDistance = touchStartX - touchEndX;
+        if (Math.abs(swipeDistance) > swipeThreshold) {
+            if (swipeDistance > 0) {
+                
+                moveNext();
+            } else {
+                
+                movePrev();
+            }
+        }
+    });
 });
 
-// carousel button script for small screens
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel-items");
-    const prevBtn = document.querySelector(".prevSm");
-    const nextBtn = document.querySelector(".nextSm");
-
-    let scrollAmount = 0;
-    const itemWidth = 320;
-
-    nextBtn.addEventListener("click", () => {
-        scrollAmount += itemWidth;
-        if (scrollAmount >= carousel.scrollWidth - itemWidth) {
-            scrollAmount = 0; 
-        }
-        carousel.style.transform = `translateX(-${scrollAmount}px)`;
-    });
-
-    prevBtn.addEventListener("click", () => {
-        scrollAmount -= itemWidth;
-        if (scrollAmount < 0) {
-            scrollAmount = carousel.scrollWidth - itemWidth; 
-        }
-        carousel.style.transform = `translateX(-${scrollAmount}px)`;
-    });
-    setInterval(() => {
-        nextBtn.click();
-    }, 4000);
-});
 
 
 // burger menu script for small screens
