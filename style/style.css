@@ -75,7 +75,7 @@
 body {
  margin: 0;
  background-color: #F5F5F5;
- padding: 20px;
+ padding: 14px 20px 20px 20px;
 }
 
 /* navbar section style start*/
@@ -94,7 +94,7 @@ body {
     background: none;
     font-weight: 600;
     font-size: 16px;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -107,7 +107,7 @@ body {
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 28px 42px;
     gap: 20px;
     list-style: none;
     border-radius: 80px;
@@ -270,26 +270,31 @@ box-shadow: none !important;
     line-height: 139.2px;
     text-align: center;
     color: #022D33;
-    max-width: 1400px;
-    margin: 78px auto 0px auto;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .title-section div div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
+}
+.hero-title{
+    margin-top:82px ;
+    margin-bottom: 50px;
 }
 .title-section h1 {
     margin: 0;
     padding: 0;
 }
 
-.hero-image{
-    margin-top: 100px;
-}
+
 .hero-image img{
     width: 100%;
+}
+.hero-image{
+    line-height: 0;
 }
 
 /* hero section style end */
@@ -297,13 +302,14 @@ box-shadow: none !important;
 
 /* contact and service section style start */
 .contact-section{
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin: 8px auto 0 auto;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .contact-box{
+    flex-grow: 1;
     width: 448px;
     height: 295px;
     background-color: #FFFFFF;
@@ -341,6 +347,7 @@ text-decoration: none;
 
 .service-box{
     width: 944px;
+    flex-grow: 1;
     background-color: #FFFFFF;
     padding: 40px ;
     border-radius: 40px;
@@ -404,15 +411,15 @@ text-decoration: none;
     line-height: 24.2px;
     color: #022D33;
     text-align: center;
-    margin: 80px 0 80px 0;
+   
 }
 
 .brand-section {
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin: 100px auto 110px auto;
     text-align: center;
     overflow: hidden;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     background: transparent;
 }
 
@@ -420,7 +427,7 @@ text-decoration: none;
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 50px 0;
+    margin: 60px 0px 0px 0px;
 }
 
 .logo-slider {
@@ -448,8 +455,8 @@ text-decoration: none;
 
 /* work and carousel section style start */
 .work-section{
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width:1440px;
+    margin: 110px auto 0px auto;
     border-radius: 40px;
  background-color: #022D33;
 }
@@ -460,6 +467,7 @@ text-decoration: none;
     font-size: 70px;
     line-height: 60.2px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .work-buttons button {
@@ -479,7 +487,7 @@ text-decoration: none;
     display: none; /* Hide on large screens */
 }
 .work-title{
-    padding: 80px 40px;
+    padding: 80px 40px 60px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -492,7 +500,7 @@ border-radius: 50px;
 }
 
 .carousel-items{
-    padding: 40px 12px;
+    padding: 0px 12px 60px 12px;
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease-in-out;
@@ -530,7 +538,7 @@ border-radius: 50px;
   }
   
   .accordion-item {
-    border-bottom: 0.5px solid #F6F7F9;
+    border-bottom: 0.5px solid #D5D9E2;
     border-radius: 8px;
   }
   
@@ -557,7 +565,7 @@ border-radius: 50px;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 16px 16px 16px;
     background-color: #FFFFFF;
     color: #23272E;
     cursor: pointer;
@@ -572,7 +580,9 @@ border-radius: 50px;
   
   .accordion-input:checked + .accordion-title {
     color: #FE5000;
+    padding: 16px 16px 0px 16px;
     background-color: #F6F7F9;
+    border-radius: 8px 8px 0 0;
   }
   
   
@@ -584,9 +594,12 @@ border-radius: 50px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
     display: none;
     padding: 16px;
+    margin-bottom: 8px;
     background-color: #F6F7F9;
+    color: #526077;
     border-radius: 5px;
   }
   
@@ -595,12 +608,12 @@ border-radius: 50px;
   }
 
   .accordion-section{
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    padding: 70px 70px;
+    gap: 98px;
+    padding: 70px 70px 0px 70px;
   }
   .accordion-section-title{
     font-family: 'CustomFont', sans-serif;
@@ -622,7 +635,7 @@ border-radius: 50px;
     font-family: 'Inter', sans-serif;;
     font-weight: 600;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 16px;
     border: 2px solid rgb(12, 15, 16);
     border-radius: 40px;
@@ -645,8 +658,8 @@ border-radius: 50px;
     background-color: #022D33;
     border-radius: 40px;
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 183px auto 0 auto;
+    /* padding: 20px; */
 }
 
 .footer-section::before {
@@ -678,8 +691,8 @@ border-radius: 50px;
     font-size: 70px;
     line-height: 74.2px;
     color: #FFFFFF;
-    padding: 50px 0;
-    margin: 0 auto;
+    padding-top: 100px;
+  margin: 0px auto 54px auto;
 }
 
 .footer-title button{
@@ -694,7 +707,7 @@ border-radius: 50px;
     font-family: 'Inter', sans-serif;;
     font-weight: 600;
     font-size: 16px;
-    margin: 0px auto 100px auto;
+    margin: 0px auto 102px auto;
     line-height: 19.36px;
 }
 
@@ -704,11 +717,12 @@ border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19.36px;
+    margin-bottom: 28px;
 }
 
 .footer-links-right-links ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -725,7 +739,13 @@ border-radius: 50px;
    
 }
 .footer-links{
-    padding: 40px;
+    padding: 48px 40px;
+}
+.footer-links-copyright{
+    padding: 48px 48px 60px 48px;
+}
+#footer-contact-sm{
+    display: none;
 }
 
 /* footer section style end */
@@ -786,7 +806,7 @@ box-shadow: none !important;
     object-fit: cover; 
     object-position: center;
     border-radius: 36px;
-    margin-top: -80px;
+    /* margin-top: -80px; */
     }
 
     .title-section{
@@ -794,7 +814,11 @@ box-shadow: none !important;
         text-align: center !important;
         color: #022D33  !important;
         line-height: 64.96px    !important;
-        margin: 50px auto 0px auto  !important;
+        /* margin: 50px auto 0px auto  !important; */
+    }
+    .hero-title{
+        margin-top:80px ;
+    margin-bottom: 29px;
     }
     .title-section li{
         height: 35px !important;
@@ -818,17 +842,22 @@ box-shadow: none !important;
     .contact-section{
         flex-direction: column;
         width: 100%;
+        gap: 9px;
     }
     .contact-box{
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         padding: 32px 32px 32px 32px;
     }
     .service-box{
         width: 100%;
         height: 100%;
         flex-direction: column;
+        gap: 104px;
      padding: 32px;
+    }
+    .contact-title p {
+        margin: 0;
     }
     
     /* contact and service section style end */
@@ -836,10 +865,13 @@ box-shadow: none !important;
     /* brand logo slider section style start */
     .brand-section h1{
         width: 294px;
-        margin: 80px auto;
+        margin: auto;
+    }
+    .brand-section{
+        margin: 64px auto 64px auto;
     }
     .brand-logos{
-        margin: 20px 0;
+        margin: 50px 0px 0px 0px;
     }
     /* brand logo slider section style end */
 
@@ -871,10 +903,13 @@ box-shadow: none !important;
         background-color: #FE5000;
     }
     .work-title{
-        padding: 40px 44px;
+        padding: 80px 44px 40px 44px;
         justify-content: center;
         text-align: center;
         margin: 0px;
+    }
+    .carousel-items{
+        padding: 0px 12px 40px 12px;
     }
     .carousel-items img{
         height: 460px;
@@ -900,7 +935,8 @@ box-shadow: none !important;
     }
     .accordion-section{
         grid-template-columns: 1fr;
-        padding: 40px 0px;
+        padding: 80px 0px 0px 0px;
+        gap: 40px;
     }
     .accordion-section-title{
         font-size: 52px;
@@ -923,7 +959,7 @@ box-shadow: none !important;
         font-family: 'Inter', sans-serif;;
         font-weight: 600;
         font-size: 16px;
-        margin:24px auto;
+        margin:0px auto !important;
         font-size: 16px;
         box-shadow: 0px 1px 1px 3px rgba(25, 61, 66, 1) inset,
                     0px 1px 2px 0px rgba(2, 45, 51, 0.5); 
@@ -935,15 +971,17 @@ box-shadow: none !important;
     .footer-title h1{
         font-size: 52px;
         line-height: 47.84px;
+        padding-top: 80px 20px;
+  margin: 0px auto 40px auto;
     }
     .footer-title button{
         margin: 20px auto 60px auto;
     }
-    #footer-contact {
+    #footer-contact-sm {
         max-width: 84px; /* Prevents exceeding 84px */
         word-wrap: break-word;
     }
-    #footer-contact li {
+    #footer-contact-sm li {
         max-width: 84px;
         word-wrap: break-word;
     }
@@ -961,10 +999,24 @@ box-shadow: none !important;
      
     }
     .footer-links{
-        padding: 0px;
+        padding: 44px 20px;
     }
+    .footer-links-copyright{
+        padding: 22px 0px 28px 0px;
+    }
+    
     .footer-section::before{
         background-image: none;
+    }
+    .footer-section{
+        margin: 80px auto 0 auto;
+    }
+    #footer-contact-sm{
+        display: block;
+       
+    }
+    #footer-contact{
+        display: none;
     }
     /*footer section style end */
 }
@@ -989,7 +1041,7 @@ box-shadow: none !important;
         text-align: center !important;
         color: #022D33  !important;
         line-height: 64.96px    !important;
-        margin: 50px auto   !important;
+        margin: auto auto   !important;
     }
     .title-section li{
         height: 35px !important;
@@ -1011,13 +1063,14 @@ box-shadow: none !important;
         flex-direction: column-reverse;
         align-items: normal;
     }
-    .contact-section{
+    .contact-section {
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
     .contact-box{
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         padding: 32px 32px 32px 32px;
     }
     .service-box{
@@ -1025,8 +1078,14 @@ box-shadow: none !important;
         height: 100%;
         flex-direction: column;
      padding: 32px;
+     gap: 104px;
     }
+    .contact-title p {
+        margin: 0;
+    }
+ /* contact and service section style end */
 
+ /* work and carousel section style start */
 
     .work-section h1{
         font-size: 52px;
@@ -1061,9 +1120,6 @@ box-shadow: none !important;
         margin: 0px;
     }
 
-    /* contact and service section style end */
-
-    /* work and carousel section style start */
     .carousel-items img{
         height: 460px;
         width: 326px;
@@ -1129,14 +1185,6 @@ box-shadow: none !important;
     .footer-title button{
         margin: 20px auto 60px auto;
     }
-    #footer-contact {
-        max-width: 84px; 
-        word-wrap: break-word;
-    }
-    #footer-contact li {
-        max-width: 84px;
-        word-wrap: break-word;
-    }
     #link-for-lg{
         display: none;
     }
@@ -1151,7 +1199,7 @@ box-shadow: none !important;
      
     }
     .footer-links{
-        padding: 0px;
+        padding: 44px 20px;
     }
     .footer-section::before{
         background-image: none;
