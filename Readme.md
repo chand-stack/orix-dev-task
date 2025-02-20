@@ -1,25 +1,34 @@
-<h1>Qanci Development Agency Project</h1>
+<h1>Qanci Development Agency</h1>
 
 <h2>Overview</h2>
 <p>
-  The Carousel Slider Project is a responsive, lightweight image carousel built with vanilla JavaScript, HTML, and CSS.
-  It is designed to provide a smooth and intuitive experience for users on both desktop and mobile devices.
-  The carousel allows users to navigate through a series of images by clicking on navigation buttons or using touch swipe gestures.
+  Qanci Development Agency is a modern, multi-feature web project that showcases advanced front-end development techniques.
+  The project integrates several interactive components including a responsive carousel, a burger menu for mobile navigation, and smooth scrolling to different sections upon route clicks.
+  Designed with clean, modular code using HTML, CSS, and vanilla JavaScript, this project demonstrates a user-friendly and dynamic web experience.
 </p>
 
 <h2>Features</h2>
 <ul>
-  <li><strong>Responsive Design:</strong> Optimized for both large and small screens, ensuring a seamless experience across devices.</li>
   <li>
-    <strong>Button Navigation:</strong> Navigate images by clicking the previous and next buttons.
-    <ul>
-      <li><strong>Large Screens:</strong> Uses <code>.prev</code> and <code>.next</code> classes.</li>
-      <li><strong>Small Screens:</strong> Uses <code>.prevSm</code> and <code>.nextSm</code> classes.</li>
-    </ul>
+    <strong>Responsive Carousel:</strong>
+    A lightweight image carousel that supports click-based navigation and touch/swipe gestures, working seamlessly on both large and small screens.
   </li>
-  <li><strong>Touch/Swipe Support:</strong> On touch-enabled devices, swipe left or right to navigate the carousel.</li>
-  <li><strong>Customizable Configuration:</strong> Easily adjust the item width and swipe threshold to suit your design requirements.</li>
-  <li><strong>Auto-Scroll Disabled:</strong> The carousel changes slides only on user interaction (clicks or swipes).</li>
+  <li>
+    <strong>Burger Menu:</strong>
+    A responsive burger menu that provides an intuitive navigation experience on mobile devices.
+  </li>
+  <li>
+    <strong>Smooth Scrolling:</strong>
+    Clicking on navigation routes scrolls smoothly to the corresponding sections of the page.
+  </li>
+  <li>
+    <strong>Modern Design:</strong>
+    Built with HTML, CSS, and vanilla JavaScript to deliver a fast, efficient, and visually appealing user interface.
+  </li>
+  <li>
+    <strong>Customizable Components:</strong>
+    Easily adjust settings for the carousel, burger menu, and scrolling behavior to tailor the user experience.
+  </li>
 </ul>
 
 <h2>Getting Started</h2>
@@ -34,8 +43,11 @@
 <ol>
   <li>
     <p>Clone the repository:</p>
-    <pre><code>git clone https://github.com/your-username/carousel-slider-project.git
-cd carousel-slider-project</code></pre>
+    <pre><code>git clone https://github.com/chand-stack/orix-dev-task.git</code></pre>
+  </li>
+  <li>
+    <p>Navigate to the project directory:</p>
+    <pre><code>cd orix-dev-task</code></pre>
   </li>
   <li>
     <p>Open the project:</p>
@@ -43,31 +55,48 @@ cd carousel-slider-project</code></pre>
   </li>
 </ol>
 
+<h3>Live Demo</h3>
+<p>
+  View the live version of the project here: <a href="https://orix-dev-task.vercel.app/" target="_blank">Live Demo</a>
+</p>
+
 <h3>File Structure</h3>
 <pre>
 ├── assets/
-│   └── images/          # Contains images used in the carousel
+│   └── images/          # Contains images used in various features (carousel, etc.)
 ├── css/
-│   └── styles.css       # Custom styles for the carousel and project layout
+│   └── styles.css       # Custom styles for the project layout and components
 ├── js/
-│   └── carousel.js      # JavaScript file for carousel functionality (buttons & touch events)
-├── index.html           # Main HTML file containing the carousel structure
+│   └── main.js          # JavaScript file for interactive components (carousel, burger menu, smooth scrolling)
+├── index.html           # Main HTML file containing the structure of the project
 └── README.md            # Project overview and documentation
 </pre>
 
 <h2>Usage</h2>
 <ul>
-  <li><strong>Navigating the Carousel:</strong> Click the left/right buttons to move between images.</li>
-  <li><strong>Touch Navigation:</strong> On mobile devices, swipe left or right on the carousel to navigate between images.</li>
+  <li>
+    <strong>Carousel Navigation:</strong>
+    Use the previous/next buttons or swipe gestures on touch-enabled devices to navigate through the carousel images.
+  </li>
+  <li>
+    <strong>Burger Menu:</strong>
+    Click the burger icon to open or close the mobile navigation menu.
+  </li>
+  <li>
+    <strong>Smooth Scrolling:</strong>
+    Click on any navigation route to smoothly scroll to the corresponding section.
+  </li>
 </ul>
 
 <h2>Customization</h2>
 <ul>
   <li>
-    <strong>Adjusting Item Width:</strong> Modify the <code>itemWidth</code> constant in <code>carousel.js</code> to set the width of each carousel item.
+    <strong>Adjust Component Settings:</strong>
+    Modify constants and configurations in the JavaScript files (e.g., item width for the carousel, swipe thresholds, etc.) to suit your needs.
   </li>
   <li>
-    <strong>Changing Swipe Sensitivity:</strong> Update the <code>swipeThreshold</code> value in <code>carousel.js</code> to change the swipe gesture sensitivity.
+    <strong>Style Adjustments:</strong>
+    Update the CSS in <code>styles.css</code> to change the look and feel of the components.
   </li>
 </ul>
 
@@ -76,7 +105,3 @@ cd carousel-slider-project</code></pre>
   Contributions are welcome! Please feel free to submit a pull request or open an issue for any bugs or feature requests.
 </p>
 
-<h2>License</h2>
-<p>
-  This project is open source and available under the <a href="LICENSE">MIT License</a>.
-</p>
