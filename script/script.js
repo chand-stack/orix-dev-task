@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     logoSlider.innerHTML += logos; 
 });
 
-// Carousel button script for large screens
+// Carousel button script for large and small screens
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".carousel-items");
     let scrollAmount = 0;
