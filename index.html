@@ -13,6 +13,7 @@
     <title>Qanci</title>
 </head>
 <body >
+    <header>
     <!-- nav and hero start -->
      <section id="home" class="nav-section">
         <!-- nav start -->
@@ -40,6 +41,34 @@
             Menu
         </button>
      </nav>
+       <!-- burger menu -->
+
+<!-- full-screen menu overlay -->
+<div id="menu-overlay" class="menu-overlay">
+    <div class="menu-content">
+        <div class="close-btn-container">
+            <p>Qanci.com</p>
+            <button id="close-menu" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
+                <i class="fa-solid fa-xmark"></i>
+                Close
+            </button>
+        </div>
+        
+        <ul id="burger-menu">
+            <li data-target="home" style="cursor: pointer;"><a href="#">Home</a></li>
+            <li data-target="works" style="cursor: pointer;"><a href="#">Works</a></li>
+            <li data-target="about" style="cursor: pointer;"><a href="#">About us</a></li>
+            <li data-target="services" style="cursor: pointer;"><a href="#">Services</a></li>
+            <li id="chat-btn-li">
+              <button class="chat-btn-sm" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
+                Let's Chat <i class="fa-solid fa-circle" style="font-size: 5px;"></i>
+              </button>
+            </li>
+          </ul>
+          
+       
+    </div>
+</div>
          <!-- nav end -->
 
             <!-- hero start -->
@@ -59,7 +88,8 @@
             <!-- hero end -->
     </section>
     <!-- nav and hero end -->
-
+</header>
+    <main>
     <!-- contact section start -->
     <section id="about" class="contact-section">
 <div class="contact-box">
@@ -284,7 +314,9 @@
     </button>
 </section>
   <!-- Faq Accordion section end -->
+</main>
 
+<footer>
   <!-- footer section start -->
    <section class="footer-section">
 <div class="footer-title">
@@ -346,35 +378,8 @@
 </div>
    </section>
    <!-- footer section end -->
-
-   <!-- burger menu -->
-
-<!-- full-screen menu overlay -->
-<div id="menu-overlay" class="menu-overlay">
-    <div class="menu-content">
-        <div class="close-btn-container">
-            <p>Qanci.com</p>
-            <button id="close-menu" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
-                <i class="fa-solid fa-xmark"></i>
-                Close
-            </button>
-        </div>
-        
-        <ul id="burger-menu">
-            <li data-target="home" style="cursor: pointer;"><a href="#">Home</a></li>
-            <li data-target="works" style="cursor: pointer;"><a href="#">Works</a></li>
-            <li data-target="about" style="cursor: pointer;"><a href="#">About us</a></li>
-            <li data-target="services" style="cursor: pointer;"><a href="#">Services</a></li>
-            <li id="chat-btn-li">
-              <button class="chat-btn-sm" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
-                Let's Chat <i class="fa-solid fa-circle" style="font-size: 5px;"></i>
-              </button>
-            </li>
-          </ul>
-          
-       
-    </div>
-</div>
+</footer>
+ 
 
    <script src="./script/script.js"></script>
 </body>
