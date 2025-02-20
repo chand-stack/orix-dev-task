@@ -113,6 +113,26 @@ body {
     
 }
 
+.nav-item {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ensures spacing between dot and text */
+}
+
+.nav-item .dot {
+    display: none; /* Initially hidden */
+}
+
+.nav-item.active {
+    color: #FE5000; /* Change color when active */
+}
+
+.nav-item.active .dot {
+    display: block; /* Show dot when active */
+}
+
 .nav button{
     background-color: #193D42;
     color: #fff;
@@ -156,6 +176,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
+    margin-top: 50px;
 }
 
 
@@ -183,7 +204,8 @@ body {
 
 .menu-content ul {
     list-style: none;
-    margin: 0; /* Removes unnecessary top margin */
+    margin: 0; 
+    margin-top: -100px;
     padding: 0;
     width: 100%; /* Ensures full width */
 }
@@ -191,7 +213,7 @@ body {
 .menu-content li {
     border-bottom: #FFFFFF1A 1px solid;
     width: 100%; 
-    padding: 10px 0px;
+    padding: 0px 0px 20px 0px;
     margin: 10px 0px;
     display: flex; 
 }
@@ -236,16 +258,17 @@ box-shadow: none !important;
     font-family: 'CustomFont', sans-serif;
     font-weight: 600; 
     font-size: 120px;
+    line-height: 139.2px;
     text-align: center;
     color: #022D33;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 78px auto 0px auto;
 }
 
 .title-section div div{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 .title-section h1 {
@@ -305,12 +328,12 @@ text-decoration: none;
 
 .service-box{
     width: 944px;
-    height: 295px;
+    /* height: 295px; */
     background-color: #FFFFFF;
-    padding: 40px;
+    padding: 40px ;
     border-radius: 40px;
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: flex-start; 
     gap: 40px; 
 }
@@ -330,6 +353,7 @@ text-decoration: none;
 .service-buttons {
     display: flex;
     flex-wrap: wrap;
+    max-width: 326px;
     gap: 10px;
     align-items: center;
 }
@@ -492,6 +516,20 @@ border-radius: 50px;
   .accordion-input {
     display: none;
   }
+
+  .accordion-title i {
+    background-color: #ECEEF2;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #022D33;
+    font-size: 12px;
+    width: 28px; /* Fixed width */
+    height: 28px; /* Fixed height */
+    flex-shrink: 0; /* Prevent shrinking on small screens */
+}
   
   .accordion-title {
     display: flex;
@@ -593,7 +631,7 @@ border-radius: 50px;
     background-image: url('/assets/images/Vector.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0.05;
     z-index: 0;
 }
 
@@ -644,7 +682,7 @@ border-radius: 50px;
     display: flex;
     gap: 20px;
     list-style: none;
-font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 19.36px;
@@ -682,6 +720,7 @@ font-family: "Inter", sans-serif;
     object-fit: cover; 
     object-position: center;
     border-radius: 36px;
+    margin-top: -80px;
     }
     .nav ul{
         display: none;
@@ -715,13 +754,11 @@ box-shadow: none !important;
     }
 
     .title-section{
-        font-family: 'CustomFont', sans-serif !important;
-        font-weight: 600 !important; 
-        font-size: 48px !important;
+        font-size: 50px !important;
         text-align: center !important;
         color: #022D33  !important;
         line-height: 64.96px    !important;
-        margin: 50px auto   !important;
+        margin: 50px auto 0px auto  !important;
     }
     .title-section li{
         height: 35px !important;
@@ -731,10 +768,9 @@ box-shadow: none !important;
         height: 35.74px !important;
         width: 35.74px !important;
     }
-    .agency-logo{
-        height: 35.74px;
+    #vector{
+        width: 47px !important;
     }
-
     .contact-title{
         flex-direction: column-reverse;
         align-items: normal;
@@ -814,7 +850,7 @@ box-shadow: none !important;
     }
     .accordion-section{
         grid-template-columns: 1fr;
-        padding: 40px 16px;
+        padding: 40px 0px;
     }
     .accordion-section-title{
         font-size: 52px;

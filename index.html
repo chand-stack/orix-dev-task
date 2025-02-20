@@ -19,15 +19,23 @@
 </head>
 <body >
     <!-- nav and hero start -->
-     <section class="nav-section">
+     <section id="home" class="nav-section">
         <!-- nav start -->
      <nav class="nav">
         <img src="./assets/logos/qancy-logo.png" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Works</li>
-            <li>About us</li>
-            <li>Services</li>
+        <ul id="nav-links">
+            <li data-target="home" class="nav-item active">
+                <i class="fa-solid fa-circle dot" style="font-size: 5px;"></i> Home
+            </li>
+            <li data-target="works" class="nav-item">
+                <i class="fa-solid fa-circle dot" style="font-size: 5px;"></i> Works
+            </li>
+            <li data-target="about" class="nav-item">
+                <i class="fa-solid fa-circle dot" style="font-size: 5px;"></i> About Us
+            </li>
+            <li data-target="services" class="nav-item">
+                <i class="fa-solid fa-circle dot" style="font-size: 5px;"></i> Services
+            </li>
         </ul>
         <button class="chat-btn" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
             Let's Chat <i class="fa-solid fa-circle" style="font-size: 5px;"></i>
@@ -44,7 +52,7 @@
                 <div>
                     <h1>Development</h1>
                     <div>
-                        <i class="fa-solid fa-code"></i>
+                        <img id="vector" class="agency-logo" src="./assets/images/title-vector-2.svg" alt="">
                         <h1>Agency</h1>
                         <img class="agency-logo" src="./assets/images/title-vector.svg" alt="">
                     </div>
@@ -58,11 +66,11 @@
     <!-- nav and hero end -->
 
     <!-- contact section start -->
-    <section class="contact-section">
+    <section id="about" class="contact-section">
 <div class="contact-box">
     <div class="contact-title">
-<p>We bring light, joy to the old, mundane or otherwise overlooked.</p>
-<i class="fa-solid fa-circle" style="font-size: 20px;"></i>
+<p>We bring light, joy to the <br> old, mundane or otherwise <br> overlooked.</p>
+<i class="fa-solid fa-circle" style="font-size: 14px;"></i>
     </div>
     <div class="contact-btn">
 <a href="">Contact us</a>
@@ -81,10 +89,10 @@
     <button>Product Design</button>
 </div>
 <div class="service-img">  
-    <img class="img-left" src="./assets/images/desk-img.png" alt="">
+    <img style="margin-bottom:-20px ;" class="img-left" src="./assets/images/desk-img.png" alt="">
     <h1>30+</h1>
     <h2>Members</h2>
-    <img class="img-right" src="./assets/images/user-icon.png" alt="">
+    <img style="margin-top: -20px;" class="img-right" src="./assets/images/user-icon.png" alt="">
 </div>
 </div>
     </section>
@@ -107,7 +115,7 @@
  <!-- brand section end -->
 
  <!-- work section start -->
-  <section class="work-section">
+  <section id="works" class="work-section">
     <div class="work-title">
         <h1>Our recent <br> works</h1>
         <div class="work-buttons">
@@ -156,7 +164,7 @@
   <!-- work section end -->
 
   <!-- Faq Accordion section start -->
-<section class="accordion-section">
+<section id="services" class="accordion-section">
     <div>
         <div class="accordion-subtitle" style="display: flex; align-items: center; gap: 8px;">
             <i class="fa-solid fa-circle" style="font-size: 8px; border: 8px solid #022D331A; border-radius: 50px; padding: 2px; color: #022D33;"></i>
@@ -178,7 +186,7 @@
             <label for="item-1" class="accordion-title">
                 
                 What are the key features of our new software?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
 
             </label>
             <div class="accordion-content">
@@ -190,7 +198,7 @@
             <label for="item-2" class="accordion-title">
                
                 How can users benefit from the latest updates?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto temporibus quam accusantium aperiam ut! Provident consequatur beatae dolorum culpa quas nulla placeat dicta inventore.</p>
@@ -201,7 +209,7 @@
             <label for="item-3" class="accordion-title">
               
                 What challenges does this software aim to solve?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti. Recusandae ipsam temporibus velit. Iusto ex, tempore soluta nulla delectus aperiam qui sunt. Saepe, suscipit.</p>
@@ -212,7 +220,7 @@
             <label for="item-4" class="accordion-title">
               
                 How does this software compare to competitors?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti. Recusandae ipsam temporibus velit. Iusto ex, tempore soluta nulla delectus aperiam qui sunt. Saepe, suscipit.</p>
@@ -223,7 +231,7 @@
             <label for="item-5" class="accordion-title">
                
                 What are the future plans for software enhancements?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti. Recusandae ipsam temporibus velit. Iusto ex, tempore soluta nulla delectus aperiam qui sunt. Saepe, suscipit.</p>
@@ -234,18 +242,18 @@
             <label for="item-6" class="accordion-title">
                 
                 How can users get support if they encounter issues?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti. Recusandae ipsam temporibus velit. Iusto ex, tempore soluta nulla delectus aperiam qui sunt. Saepe, suscipit.</p>
             </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" style="border-bottom: none;">
             <input type="checkbox" id="item-7" class="accordion-input">
             <label for="item-7" class="accordion-title">
                
                 What feedback have users provided about the new interface?
-                <i class="fa-solid fa-angle-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; color: #022D33;"></i>
+                <i class="fa-sharp fa-solid fa-chevron-down" style="background-color: #ECEEF2; padding: 8px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #022D33; font-size: 12px;"></i>
             </label>
             <div class="accordion-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, deleniti. Recusandae ipsam temporibus velit. Iusto ex, tempore soluta nulla delectus aperiam qui sunt. Saepe, suscipit.</p>
@@ -272,12 +280,13 @@
     <div class="footer-links-right">
         <div class="footer-links-right-links">
             <h1 class="footer-links-title">Quick links</h1>
-            <ul>
-                <li>Home</li>
-                <li>Works</li>
-                <li>About us</li>
-                <li>Services</li>
+            <ul id="footer-links">
+                <li data-target="home" class="footer-item" style="cursor: pointer;"><i class="fa-solid fa-circle dot" style="font-size: 5px; "></i> Home</li>
+                <li data-target="works" class="footer-item" style="cursor: pointer;"><i class="fa-solid fa-circle dot" style="font-size: 5px; display: none;"></i> Works</li>
+                <li data-target="about" class="footer-item" style="cursor: pointer;"><i class="fa-solid fa-circle dot" style="font-size: 5px; display: none;"></i> About us</li>
+                <li data-target="services" class="footer-item" style="cursor: pointer;"><i class="fa-solid fa-circle dot" style="font-size: 5px; display: none;"></i> Services</li>
             </ul>
+            
         </div>
         <div id="footer-contact" class="footer-links-right-links">
             <h1 class="footer-links-title">Contact us</h1>
@@ -332,15 +341,18 @@
             </button>
         </div>
         
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li id="chat-btn-li"> <button class="chat-btn-sm" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
+        <ul id="burger-menu">
+            <li data-target="home" style="cursor: pointer;"><a href="#">Home</a></li>
+            <li data-target="works" style="cursor: pointer;"><a href="#">Works</a></li>
+            <li data-target="about" style="cursor: pointer;"><a href="#">About us</a></li>
+            <li data-target="services" style="cursor: pointer;"><a href="#">Services</a></li>
+            <li id="chat-btn-li">
+              <button class="chat-btn-sm" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
                 Let's Chat <i class="fa-solid fa-circle" style="font-size: 5px;"></i>
-            </button></li>
-        </ul>
+              </button>
+            </li>
+          </ul>
+          
        
     </div>
 </div>
