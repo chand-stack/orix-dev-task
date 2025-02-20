@@ -78,6 +78,7 @@ body {
  padding: 20px;
 }
 
+/* navbar section style start*/
 .nav-section {
     background-image: url('/assets/images/Vector.svg');
     background-repeat: no-repeat;
@@ -118,19 +119,19 @@ body {
     transition: color 0.3s ease-in-out;
     display: flex;
     align-items: center;
-    gap: 10px; /* Ensures spacing between dot and text */
+    gap: 10px; 
 }
 
 .nav-item .dot {
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 .nav-item.active {
-    color: #FE5000; /* Change color when active */
+    color: #FE5000; 
 }
 
 .nav-item.active .dot {
-    display: block; /* Show dot when active */
+    display: block;
 }
 
 .nav button{
@@ -196,7 +197,7 @@ body {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* Show Menu When Active */
+
 .menu-overlay.active {
     opacity: 1;
     visibility: visible;
@@ -207,7 +208,7 @@ body {
     margin: 0; 
     margin-top: -100px;
     padding: 0;
-    width: 100%; /* Ensures full width */
+    width: 100%; 
 }
 
 .menu-content li {
@@ -231,7 +232,7 @@ border-bottom: none;
     
 }
 
-/* Close Button */
+
 #close-menu {
     position: absolute;
     top: 20px;
@@ -253,7 +254,13 @@ background-color: #DFDFDF1A !important;
 box-shadow: none !important;
 }
 
+.bar-btn{
+    display: none !important;
+}
 
+/* navbar section style end */
+
+/* hero section style start */
 .title-section{
     font-family: 'CustomFont', sans-serif;
     font-weight: 600; 
@@ -283,6 +290,10 @@ box-shadow: none !important;
     width: 100%;
 }
 
+/* hero section style end */
+
+
+/* contact and service section style start */
 .contact-section{
     max-width: 1400px;
     margin: 0 auto;
@@ -328,7 +339,6 @@ text-decoration: none;
 
 .service-box{
     width: 944px;
-    /* height: 295px; */
     background-color: #FFFFFF;
     padding: 40px ;
     border-radius: 40px;
@@ -381,6 +391,10 @@ text-decoration: none;
     color: #022D33;
 }
 
+/* contact and service section style end */
+
+
+/* brand logo slider section style start */
 .brand-section h1{
     font-family: 'Inter', sans-serif;
     font-weight: 500; 
@@ -428,6 +442,9 @@ text-decoration: none;
     }
 }
 
+/* brand logo slider section style end */
+
+/* work and carousel section style start */
 .work-section{
     max-width: 1400px;
     margin: 0 auto;
@@ -467,7 +484,6 @@ text-decoration: none;
 }
 
 .carousel-items img{
-/* width: 400px; */
 width: 100%;
 height: 682px;
 border-radius: 50px;
@@ -501,6 +517,9 @@ border-radius: 50px;
     position: relative;
 }
 
+/* work and carousel section style end */
+
+/*faq accordion section style start */
 .accordion {
     background-color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -548,13 +567,13 @@ border-radius: 50px;
   }
   
 
-  /* Change color to orange when the accordian is clicked */
+  
   .accordion-input:checked + .accordion-title {
     color: #FE5000;
     background-color: #F6F7F9;
   }
   
-  /* Change the icon when accordian clicked */
+  
   .accordion-input:checked + .accordion-title i {
     transform: rotate(180deg);
   }
@@ -612,6 +631,11 @@ border-radius: 50px;
     display: none !important;
   }
 
+  /*faq accordian section style end */
+
+
+    /*footer section style start */
+  
   .footer-section {
     position: relative;
     background-color: #022D33;
@@ -700,9 +724,9 @@ border-radius: 50px;
     padding: 40px;
 }
 
-.bar-btn{
-    display: none !important;
-}
+/* footer section style end */
+
+
 
 /* for small devices */
 @media screen and (max-width:576px) {
@@ -711,17 +735,13 @@ border-radius: 50px;
         padding: 16px;
         margin: auto;
     }
+
+    /* navbar section style start */
+
     .nav-section {
         background-image: none;
     }
-    .hero-image img{
-        width: 100%;
-    height: 356px;
-    object-fit: cover; 
-    object-position: center;
-    border-radius: 36px;
-    margin-top: -80px;
-    }
+
     .nav ul{
         display: none;
     }
@@ -753,6 +773,18 @@ box-shadow: none !important;
         display: block;
     }
 
+    /* navbar section style end */
+
+    /* hero section style start */
+    .hero-image img{
+        width: 100%;
+    height: 356px;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 36px;
+    margin-top: -80px;
+    }
+
     .title-section{
         font-size: 50px !important;
         text-align: center !important;
@@ -771,6 +803,10 @@ box-shadow: none !important;
     #vector{
         width: 47px !important;
     }
+
+    /* hero section style end */
+
+    /* contact and service section style start */
     .contact-title{
         flex-direction: column-reverse;
         align-items: normal;
@@ -791,6 +827,9 @@ box-shadow: none !important;
      padding: 32px;
     }
     
+    /* contact and service section style end */
+
+    /* brand logo slider section style start */
     .brand-section h1{
         width: 294px;
         margin: 80px auto;
@@ -798,16 +837,19 @@ box-shadow: none !important;
     .brand-logos{
         margin: 20px 0;
     }
+    /* brand logo slider section style end */
+
+    /* work and carousel section style start */
     .work-section h1{
         font-size: 52px;
         line-height: 44.72px;
     }
     .work-buttons {
-        display: none; /* Hide the main work-buttons */
+        display: none; 
     }
 
     #work-button-sm {
-        display: flex; /* Show only the small device buttons */
+        display: flex; 
         justify-content: center;
         gap: 10px;
         padding-bottom: 95px;
@@ -837,6 +879,10 @@ box-shadow: none !important;
     .carousel-items h2{
         font-size: 20px;
     }
+
+    /* work and carousel section style end */
+
+    /*faq accordion section style start */
     .accordion{
         border-radius: 8px;
     }
@@ -878,6 +924,10 @@ box-shadow: none !important;
         box-shadow: 0px 1px 1px 3px rgba(25, 61, 66, 1) inset,
                     0px 1px 2px 0px rgba(2, 45, 51, 0.5); 
     }
+
+    /*faq accordian section style end */
+
+    /*footer section style start */
     .footer-title h1{
         font-size: 52px;
         line-height: 47.84px;
@@ -912,14 +962,19 @@ box-shadow: none !important;
     .footer-section::before{
         background-image: none;
     }
+    /*footer section style end */
 }
 
+
+/* for medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
     body{
         max-width: 100%;
         padding: 16px;
         margin: auto auto;
     }
+
+    /* hero section style start */
     .hero-image img{
         width: 100%;
     }
@@ -943,6 +998,10 @@ box-shadow: none !important;
     .agency-logo{
         height: 35.74px;
     }
+
+    /* hero section style end */
+
+    /* contact and service section style start */
 
     .contact-title{
         flex-direction: column-reverse;
@@ -970,11 +1029,11 @@ box-shadow: none !important;
         line-height: 44.72px;
     }
     .work-buttons {
-        display: none; /* Hide the main work-buttons */
+        display: none; 
     }
 
     #work-button-sm {
-        display: flex; /* Show only the small device buttons */
+        display: flex; 
         justify-content: center;
         gap: 10px;
         padding-bottom: 95px;
@@ -997,6 +1056,10 @@ box-shadow: none !important;
         text-align: center;
         margin: 0px;
     }
+
+    /* contact and service section style end */
+
+    /* work and carousel section style start */
     .carousel-items img{
         height: 460px;
         width: 326px;
@@ -1005,6 +1068,10 @@ box-shadow: none !important;
         font-size: 20px;
     }
 
+    /* work and carousel section style end */
+
+
+    /*faq accordion section style start */
     .accordion{
         border-radius: 8px;
     }
@@ -1046,6 +1113,10 @@ box-shadow: none !important;
         box-shadow: 0px 1px 1px 3px rgba(25, 61, 66, 1) inset,
                     0px 1px 2px 0px rgba(2, 45, 51, 0.5); 
     }
+
+    /*faq accordian section style end */
+
+    /*footer section style start */
     
     .footer-title h1{
         font-size: 52px;
@@ -1055,7 +1126,7 @@ box-shadow: none !important;
         margin: 20px auto 60px auto;
     }
     #footer-contact {
-        max-width: 84px; /* Prevents exceeding 84px */
+        max-width: 84px; 
         word-wrap: break-word;
     }
     #footer-contact li {
@@ -1070,8 +1141,8 @@ box-shadow: none !important;
     }
     #link-for-sm {
         display: flex;
-        justify-content: center; /* Centers horizontally */
-        align-items: center; /* Centers vertically */
+        justify-content: center; 
+        align-items: center; 
         width: 100%;
      
     }
@@ -1081,4 +1152,6 @@ box-shadow: none !important;
     .footer-section::before{
         background-image: none;
     }
+
+    /*footer section style end */
 }
