@@ -64,10 +64,12 @@
 <pre>
 ├── assets/
 │   └── images/          # Contains images used in various features (carousel, etc.)
-├── css/
+│   └── fonts/          # Contains fonts used in various texts
+│   └── logos/          # Contains logos used in various features
+├── style/
 │   └── styles.css       # Custom styles for the project layout and components
-├── js/
-│   └── main.js          # JavaScript file for interactive components (carousel, burger menu, smooth scrolling)
+├── script/
+│   └── script.js          # JavaScript file for interactive components (carousel, burger menu, smooth scrolling)
 ├── index.html           # Main HTML file containing the structure of the project
 └── README.md            # Project overview and documentation
 </pre>
