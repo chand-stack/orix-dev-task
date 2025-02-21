@@ -243,7 +243,7 @@ border-bottom: none;
     color: #FFFFFF !important;
     border: none !important;
     border-radius: 99px;
-    display: block !important;
+    display: flex !important;
     font-family: 'Inter', sans-serif !important;
     width: 114px !important;
     height: 48px !important;
@@ -761,7 +761,9 @@ border-radius: 50px;
     }
 
     /* navbar section style start */
-
+.nav{
+    padding: 6px 4px;
+}
     .nav-section {
         background-image: none;
     }
@@ -775,7 +777,7 @@ border-radius: 50px;
     .bar-btn{
         color: #7F7F7F !important;
         border: none !important;
-        display: block !important;
+        display: flex !important;
         font-family: 'Inter', sans-serif !important;
         width: 104px !important;
         height: 46px !important;
@@ -947,7 +949,7 @@ box-shadow: none !important;
         display: none !important;
     }
     .faq-btn-sm{
-        display: block !important;
+        display: flex !important;
         background-color: #193D42;
         color: #fff;
         padding: 10px 20px;
