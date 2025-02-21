@@ -1,6 +1,6 @@
 // brand logo slider script
 document.addEventListener("DOMContentLoaded", function () {
-    const logoSlider = document.getElementById(".logo-slider");
+    const logoSlider = document.querySelector(".logo-slider");
     const logos = logoSlider.innerHTML;
     logoSlider.innerHTML += logos; 
 });
